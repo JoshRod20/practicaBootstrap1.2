@@ -124,7 +124,7 @@
 
         <div class="col-lg-3">
             <label for="ciudad" class="form-label">Ciudad</label>
-            <select class="form-select" id="validationCustom05" required>
+            <select class="form-select" id="validationCiudad" required>
                 <option selected disabled value="">Seleccione...</option>
                 <option>Juigalpa</option>
                 <option>Managua</option>
@@ -196,6 +196,7 @@
 <script src="./src/src/jspdf.min.js">
 </script>
 
+
 <script>
     (()  => {
         'use strict'
@@ -224,8 +225,9 @@
                 doc.setFontSize(14);
                 doc.setFontType("bold");
                 doc.setTextColor(255, 255, 255);
-                doc.text('WWSOLAR CALL CENTER NICA 2023', 12, 50);
-                const docpdf = `${nombreAgente}.pdf`;
+                doc.text('OnlineShop 2024', 12, 50);
+                const docpdf = `${primerNombre} ${segundoNombre} ${primerApellido} 
+                ${segundoApellido} ${CorreoElectronico} ${ValidationCiudad} ${Departamento}.pdf`;
                 doc.save(docpdf); 
             }
         </script>
